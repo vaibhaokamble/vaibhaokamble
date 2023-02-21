@@ -3,9 +3,9 @@
 <h1 align="center">Hi 👋, I'm Vaibhao Kamble</h1>
 <h3 align="center">A Passionate Java Full Stack Developer From India</h3>
 
-<img align="right" alt="Coding" width="400" src="https://t3.ftcdn.net/jpg/01/78/65/02/360_F_178650212_oePgGaIhKUhz0cIg2bLBGsFsdbWs5Xwj.jpg">
+<img align="right" alt="Coding" width="400" src="https://user-images.githubusercontent.com/55389276/140866485-8fb1c876-9a8f-4d6a-98dc-08c4981eaf70.gif">
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=vaibhaokamble&label=Profile%20views&color=0e75b6&style=flat" alt="vaibhaokamble" /> </p>
+<p align="left"> <img src="https://username=vaibhaokamble&label=Profile%20views&color=0e75b6&style=flat" alt="vaibhaokamble" /> </p>
 
 <p align="left"> <a href="https://twitter.com/vaibhaokamble" target="blank"><img src="https://img.shields.io/twitter/follow/vaibhaokamble?logo=twitter&style=for-the-badge" alt="vaibhaokamble" /></a> </p>
 
