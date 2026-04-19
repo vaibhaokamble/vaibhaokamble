@@ -73,12 +73,38 @@
 
 ---
 
-## Featured projects (add 2–4 best repos)
+## 🚀 Featured Projects
 
-> Pin your best repos on your GitHub profile (top of profile page).
-- **Project 1:** _Add a one-line description + tech stack + link_
-- **Project 2:** _Add a one-line description + tech stack + link_
-- **Project 3:** _Add a one-line description + tech stack + link_
+### 🔹 Task Management System
+
+A web-based application designed to efficiently manage daily tasks with features like task creation, updating, deletion, and user authentication. It helps improve productivity by organizing tasks in a structured way.
+**Tech Stack:** Java, Spring Boot, MySQL, REST API
+🔗 
+
+---
+
+### 🔹 Food Ordering Management System
+
+A full-stack web application that allows users to browse menus, add items to cart, and place orders seamlessly. Includes admin functionalities for managing menu items and orders.
+**Tech Stack:** Java, JSP, Servlet, MySQL
+🔗 
+
+---
+
+### 🔹 Student Result Management System
+
+A system developed to manage student academic results with secure login, result processing, and data management features. Designed to simplify result handling for educational institutions.
+**Tech Stack:** Java, JSP, Servlet, MySQL
+🔗 
+
+---
+
+### 🔹 Hotel Booking Management System
+
+A web-based application for booking hotel rooms with features like room availability checking, booking management, and user-friendly interface for smooth reservation experience.
+**Tech Stack:** Java, Spring Boot, MySQL
+🔗 
+
 
 ---
 
