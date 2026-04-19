@@ -2,7 +2,7 @@
 
 <h1 align="center">Hi, I'm Vaibhao Kamble</h1>
 <p align="center">
-  Java Full-Stack Developer @ <b>Koderz Technology</b> • MCA • Java • SQL • Web Development
+  Java Full-Stack Developer @ <b>Koderz Technology</b> • MCA • Java • SQL •SpringBoot • Web Development
 </p>
 
 <p align="center">
@@ -26,14 +26,14 @@
 - **Java Full-Stack Developer** at **Koderz Technology**
 - Pursuing **MCA (Master of Computer Applications)**
 - Interested in building **scalable web applications** (backend + UI + databases)
-- Ask me about: **Java, SQL, HTML, CSS, JavaScript, C/C++, PHP**
+- Ask me about: **Java, SpringBoot, SQL, HTML, CSS, JavaScript, C/C++, PHP**
 - Fun fact: **Fun with the code**
 
 ---
 
 ## Tech stack
 
-**Backend:** Java, SQL  
+**Backend:** Java, SQL,  SpringBoot
 **Frontend:** HTML5, CSS3, Bootstrap, React, Angular  
 **Database:** MySQL, Oracle  
 **Other:** Android, PHP, Python, C
