@@ -71,7 +71,7 @@ A web application to manage daily tasks with creation, updating, deletion, and u
 ### 🔹 Food Ordering Management System
 A full-stack web app for browsing menus, adding items to cart, and placing orders. Includes admin panel for managing menu and orders.  
 **Tech Stack:** Java, JSP, Servlet, MySQL  
-🔗 
+🔗 https://github.com/vaibhaokamble/Online_Food_Order_Delivery_System.github.io
 
 ### 🔹 Student Result Management System
 Manages student academic results with secure login, result processing, and data management.  
