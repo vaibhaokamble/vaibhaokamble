@@ -1,1 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420">
 
+<defs>
+
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#020617"/>
+<stop offset="100%" stop-color="#0E7490"/>
+</linearGradient>
+
+<style>
+
+.t{
+font-family:'Courier New',monospace;
+fill:#E2E8F0;
+font-weight:600;
+}
+
+.card{
+fill:#0F172A;
+stroke:#22D3EE;
+stroke-width:2;
+}
+
+.c{
+animation:rise 8s infinite;
+}
+
+.c1{animation-delay:0s;}
+.c2{animation-delay:.7s;}
+.c3{animation-delay:1.4s;}
+.c4{animation-delay:2.1s;}
+
+@keyframes rise{
+
+0%,8%{
+opacity:0;
+transform:translateY(15px);
+}
+
+18%,75%{
+opacity:1;
+transform:translateY(0);
+}
+
+90%,100%{
+opacity:0;
+}
+
+}
+
+</style>
+
+</defs>
+
+<rect
+x="10"
+y="10"
+width="980"
+height="400"
+rx="26"
+fill="url(#bg)"
+stroke="#22D3EE"
+stroke-opacity=".4"
+/>
+
+<text
+x="500"
+y="55"
+text-anchor="middle"
+class="t"
+font-size="29"
+>
+🌱 CURRENTLY LEARNING
+</text>
+
+<g class="c c1" transform="translate(45 100)">
+<rect class="card" width="210" height="210" rx="22"/>
+
+<text x="105" y="55" text-anchor="middle" class="t" font-size="32">
+⚛️
+</text>
+
+<text x="105" y="92" text-anchor="middle" class="t" font-size="20">
+REACT
+</text>
+
+<text x="105" y="130" text-anchor="middle" class="t" font-size="15">
+Hooks
+</text>
+
+<text x="105" y="158" text-anchor="middle" class="t" font-size="15">
+Redux Toolkit
+</text>
+
+<text x="105" y="186" text-anchor="middle" class="t" font-size="15">
+API Integration
+</text>
+</g>
+
+<g class="c c2" transform="translate(275 100)">
+<rect class="card" width="210" height="210" rx="22"/>
+
+<text x="105" y="55" text-anchor="middle" class="t" font-size="32">
+🏗️
+</text>
+
+<text x="105" y="92" text-anchor="middle" class="t" font-size="18">
+MICROSERVICES
+</text>
+
+<text x="105" y="130" text-anchor="middle" class="t" font-size="15">
+Spring Cloud
+</text>
+
+<text x="105" y="158" text-anchor="middle" class="t" font-size="15">
+API Gateway
+</text>
+
+<text x="105" y="186" text-anchor="middle" class="t" font-size="15">
+Service Discovery
+</text>
+</g>
+
+<g class="c c3" transform="translate(505 100)">
+<rect class="card" width="210" height="210" rx="22"/>
+
+<text x="105" y="55" text-anchor="middle" class="t" font-size="32">
+🧠
+</text>
+
+<text x="105" y="92" text-anchor="middle" class="t" font-size="18">
+SYSTEM DESIGN
+</text>
+
+<text x="105" y="130" text-anchor="middle" class="t" font-size="15">
+Scalability
+</text>
+
+<text x="105" y="158" text-anchor="middle" class="t" font-size="15">
+Caching
+</text>
+
+<text x="105" y="186" text-anchor="middle" class="t" font-size="15">
+Distributed Systems
+</text>
+</g>
+
+<g class="c c4" transform="translate(735 100)">
+<rect class="card" width="210" height="210" rx="22"/>
+
+<text x="105" y="55" text-anchor="middle" class="t" font-size="32">
+☁️
+</text>
+
+<text x="105" y="92" text-anchor="middle" class="t" font-size="18">
+CLOUD &amp; DEVOPS
+</text>
+
+<text x="105" y="130" text-anchor="middle" class="t" font-size="15">
+Docker
+</text>
+
+<text x="105" y="158" text-anchor="middle" class="t" font-size="15">
+AWS
+</text>
+
+<text x="105" y="186" text-anchor="middle" class="t" font-size="15">
+CI/CD
+</text>
+</g>
+
+</svg>
