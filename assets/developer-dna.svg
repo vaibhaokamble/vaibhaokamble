@@ -1,208 +1,463 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620">
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1000"
+     height="620"
+     viewBox="0 0 1000 620">
 
-<defs>
+  <!-- ================================================= -->
+  <!-- BACKGROUND                                        -->
+  <!-- ================================================= -->
 
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-<stop offset="0%" stop-color="#020617"/>
-<stop offset="100%" stop-color="#164E63"/>
-</linearGradient>
+  <rect
+    x="0"
+    y="0"
+    width="1000"
+    height="620"
+    rx="28"
+    fill="#0d1117"
+    stroke="#30363d"
+    stroke-width="2"
+  />
 
-<style>
+  <!-- ================================================= -->
+  <!-- TITLE                                             -->
+  <!-- ================================================= -->
 
-.t{
-font-family:'Courier New',monospace;
-fill:#E2E8F0;
-font-weight:600;
-}
+  <text
+    x="500"
+    y="58"
+    text-anchor="middle"
+    fill="#58a6ff"
+    font-family="Arial, sans-serif"
+    font-size="30"
+    font-weight="700">
+    🧬 DEVELOPER DNA
+  </text>
 
-.node{
-fill:#0F172A;
-stroke:#22D3EE;
-stroke-width:2;
-}
+  <text
+    x="500"
+    y="88"
+    text-anchor="middle"
+    fill="#8b949e"
+    font-family="Arial, sans-serif"
+    font-size="14">
+    How I turn problems into production-ready software
+  </text>
 
-.txt{
-font-size:20px;
-}
 
-.arr{
-stroke:#22D3EE;
-stroke-width:3;
-stroke-dasharray:10 10;
-animation:flow 1.4s linear infinite;
-}
+  <!-- ================================================= -->
+  <!-- MAIN FLOW LINE                                    -->
+  <!-- ================================================= -->
 
-.n1{animation:pulse 7s infinite 0s;}
-.n2{animation:pulse 7s infinite .8s;}
-.n3{animation:pulse 7s infinite 1.6s;}
-.n4{animation:pulse 7s infinite 2.4s;}
-.n5{animation:pulse 7s infinite 3.2s;}
-.n6{animation:pulse 7s infinite 4s;}
+  <line
+    x1="110"
+    y1="280"
+    x2="890"
+    y2="280"
+    stroke="#30363d"
+    stroke-width="4"
+  />
 
-@keyframes flow{
-to{
-stroke-dashoffset:-20;
-}
-}
+  <!-- Flow highlight -->
+  <line
+    x1="110"
+    y1="280"
+    x2="890"
+    y2="280"
+    stroke="#58a6ff"
+    stroke-width="2"
+    stroke-dasharray="10 12"
+  />
 
-@keyframes pulse{
-0%,10%{
-opacity:.35;
-transform:scale(.97);
-}
 
-20%,70%{
-opacity:1;
-transform:scale(1);
-}
+  <!-- ================================================= -->
+  <!-- STEP 1 : PROBLEM                                  -->
+  <!-- ================================================= -->
 
-82%,100%{
-opacity:.35;
-transform:scale(.97);
-}
-}
+  <circle
+    cx="110"
+    cy="280"
+    r="55"
+    fill="#161b22"
+    stroke="#58a6ff"
+    stroke-width="2"
+  />
 
-</style>
+  <circle
+    cx="110"
+    cy="280"
+    r="42"
+    fill="#0d1117"
+    stroke="#30363d"
+  />
 
-</defs>
+  <text
+    x="110"
+    y="273"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="24">
+    💡
+  </text>
 
-<rect
-x="10"
-y="10"
-width="880"
-height="600"
-rx="28"
-fill="url(#bg)"
-stroke="#22D3EE"
-stroke-opacity=".4"
-/>
+  <text
+    x="110"
+    y="310"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="15"
+    font-weight="700">
+    PROBLEM
+  </text>
 
-<text
-x="450"
-y="62"
-text-anchor="middle"
-class="t"
-font-size="30"
->
-🧬 DEVELOPER DNA
-</text>
 
-<g transform="translate(300 95)">
-<rect
-class="node n1"
-width="300"
-height="58"
-rx="18"
-/>
+  <!-- ================================================= -->
+  <!-- STEP 2 : UNDERSTAND                               -->
+  <!-- ================================================= -->
 
-<text
-x="150"
-y="38"
-text-anchor="middle"
-class="t txt"
->
-💡 PROBLEM
-</text>
-</g>
+  <circle
+    cx="266"
+    cy="280"
+    r="55"
+    fill="#161b22"
+    stroke="#58a6ff"
+    stroke-width="2"
+  />
 
-<line class="arr" x1="450" y1="153" x2="450" y2="185"/>
+  <circle
+    cx="266"
+    cy="280"
+    r="42"
+    fill="#0d1117"
+    stroke="#30363d"
+  />
 
-<g transform="translate(300 185)">
-<rect
-class="node n2"
-width="300"
-height="58"
-rx="18"
-/>
+  <text
+    x="266"
+    y="273"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="24">
+    🔍
+  </text>
 
-<text
-x="150"
-y="38"
-text-anchor="middle"
-class="t txt"
->
-🔍 UNDERSTAND
-</text>
-</g>
+  <text
+    x="266"
+    y="310"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="15"
+    font-weight="700">
+    UNDERSTAND
+  </text>
 
-<line class="arr" x1="450" y1="243" x2="450" y2="275"/>
 
-<g transform="translate(300 275)">
-<rect
-class="node n3"
-width="300"
-height="58"
-rx="18"
-/>
+  <!-- ================================================= -->
+  <!-- STEP 3 : ARCHITECT                               -->
+  <!-- ================================================= -->
 
-<text
-x="150"
-y="38"
-text-anchor="middle"
-class="t txt"
->
-🏗️ ARCHITECT
-</text>
-</g>
+  <circle
+    cx="422"
+    cy="280"
+    r="55"
+    fill="#161b22"
+    stroke="#58a6ff"
+    stroke-width="2"
+  />
 
-<line class="arr" x1="450" y1="333" x2="450" y2="365"/>
+  <circle
+    cx="422"
+    cy="280"
+    r="42"
+    fill="#0d1117"
+    stroke="#30363d"
+  />
 
-<g transform="translate(300 365)">
-<rect
-class="node n4"
-width="300"
-height="58"
-rx="18"
-/>
+  <text
+    x="422"
+    y="273"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="24">
+    🏗️
+  </text>
 
-<text
-x="150"
-y="38"
-text-anchor="middle"
-class="t txt"
->
-💻 BUILD
-</text>
-</g>
+  <text
+    x="422"
+    y="310"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="15"
+    font-weight="700">
+    ARCHITECT
+  </text>
 
-<line class="arr" x1="450" y1="423" x2="450" y2="455"/>
 
-<g transform="translate(300 455)">
-<rect
-class="node n5"
-width="300"
-height="58"
-rx="18"
-/>
+  <!-- ================================================= -->
+  <!-- STEP 4 : BUILD                                   -->
+  <!-- ================================================= -->
 
-<text
-x="150"
-y="38"
-text-anchor="middle"
-class="t txt"
->
-🔐 SECURE • 🧪 TEST
-</text>
-</g>
+  <circle
+    cx="578"
+    cy="280"
+    r="55"
+    fill="#161b22"
+    stroke="#58a6ff"
+    stroke-width="2"
+  />
 
-<line class="arr" x1="450" y1="513" x2="450" y2="545"/>
+  <circle
+    cx="578"
+    cy="280"
+    r="42"
+    fill="#0d1117"
+    stroke="#30363d"
+  />
 
-<g transform="translate(300 545)">
-<rect
-class="node n6"
-width="300"
-height="58"
-rx="18"
-/>
+  <text
+    x="578"
+    y="273"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="24">
+    💻
+  </text>
 
-<text
-x="150"
-y="38"
-text-anchor="middle"
-class="t txt"
->
-🚀 DEPLOY • 🔄 IMPROVE
-</text>
-</g>
+  <text
+    x="578"
+    y="310"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="15"
+    font-weight="700">
+    BUILD
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- STEP 5 : SECURE + TEST                           -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="734"
+    cy="280"
+    r="55"
+    fill="#161b22"
+    stroke="#58a6ff"
+    stroke-width="2"
+  />
+
+  <circle
+    cx="734"
+    cy="280"
+    r="42"
+    fill="#0d1117"
+    stroke="#30363d"
+  />
+
+  <text
+    x="734"
+    y="273"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="24">
+    🔐
+  </text>
+
+  <text
+    x="734"
+    y="310"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="14"
+    font-weight="700">
+    SECURE • TEST
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- STEP 6 : DEPLOY                                  -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="890"
+    cy="280"
+    r="55"
+    fill="#161b22"
+    stroke="#58a6ff"
+    stroke-width="2"
+  />
+
+  <circle
+    cx="890"
+    cy="280"
+    r="42"
+    fill="#0d1117"
+    stroke="#30363d"
+  />
+
+  <text
+    x="890"
+    y="273"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="24">
+    🚀
+  </text>
+
+  <text
+    x="890"
+    y="310"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="14"
+    font-weight="700">
+    DEPLOY
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- BOTTOM ENGINEERING PRINCIPLES                    -->
+  <!-- ================================================= -->
+
+  <text
+    x="500"
+    y="405"
+    text-anchor="middle"
+    fill="#8b949e"
+    font-family="Arial, sans-serif"
+    font-size="15"
+    font-weight="700">
+    ENGINEERING PRINCIPLES
+  </text>
+
+
+  <!-- Principle 1 -->
+
+  <rect
+    x="90"
+    y="435"
+    width="250"
+    height="65"
+    rx="14"
+    fill="#161b22"
+    stroke="#30363d"
+  />
+
+  <text
+    x="215"
+    y="463"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="16"
+    font-weight="700">
+    🧹 Clean Code
+  </text>
+
+  <text
+    x="215"
+    y="485"
+    text-anchor="middle"
+    fill="#8b949e"
+    font-family="Arial, sans-serif"
+    font-size="12">
+    Readable • Maintainable
+  </text>
+
+
+  <!-- Principle 2 -->
+
+  <rect
+    x="375"
+    y="435"
+    width="250"
+    height="65"
+    rx="14"
+    fill="#161b22"
+    stroke="#30363d"
+  />
+
+  <text
+    x="500"
+    y="463"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="16"
+    font-weight="700">
+    🔐 Secure Design
+  </text>
+
+  <text
+    x="500"
+    y="485"
+    text-anchor="middle"
+    fill="#8b949e"
+    font-family="Arial, sans-serif"
+    font-size="12">
+    Secure • Reliable
+  </text>
+
+
+  <!-- Principle 3 -->
+
+  <rect
+    x="660"
+    y="435"
+    width="250"
+    height="65"
+    rx="14"
+    fill="#161b22"
+    stroke="#30363d"
+  />
+
+  <text
+    x="785"
+    y="463"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="16"
+    font-weight="700">
+    📈 Scalability
+  </text>
+
+  <text
+    x="785"
+    y="485"
+    text-anchor="middle"
+    fill="#8b949e"
+    font-family="Arial, sans-serif"
+    font-size="12">
+    Simple • Efficient • Scalable
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- FOOTER                                            -->
+  <!-- ================================================= -->
+
+  <text
+    x="500"
+    y="550"
+    text-anchor="middle"
+    fill="#58a6ff"
+    font-family="Arial, sans-serif"
+    font-size="17"
+    font-weight="700">
+    THINK → DESIGN → BUILD → SHIP → IMPROVE 🚀
+  </text>
 
 </svg>
