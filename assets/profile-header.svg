@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200"
+     height="430"
+     viewBox="0 0 1200 430">
+
+  <defs>
+
+    <!-- Main background -->
+    <linearGradient id="bg"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%">
+      <stop offset="0%" stop-color="#080B12"/>
+      <stop offset="55%" stop-color="#101827"/>
+      <stop offset="100%" stop-color="#07151B"/>
+    </linearGradient>
+
+    <!-- Neon accent -->
+    <linearGradient id="accent"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="50%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="glow"
+            x="-50%"
+            y="-50%"
+            width="200%"
+            height="200%">
+
+      <feGaussianBlur
+          stdDeviation="4"
+          result="blur"/>
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+
+    </filter>
+
+  </defs>
+
+
+  <!-- ================================================= -->
+  <!-- BACKGROUND -->
+  <!-- ================================================= -->
+
+  <rect
+      x="0"
+      y="0"
+      width="1200"
+      height="430"
+      rx="28"
+      fill="url(#bg)"/>
+
+  <rect
+      x="2"
+      y="2"
+      width="1196"
+      height="426"
+      rx="26"
+      fill="none"
+      stroke="#263244"
+      stroke-width="2"/>
+
+
+  <!-- ================================================= -->
+  <!-- TERMINAL BAR -->
+  <!-- ================================================= -->
+
+  <rect
+      x="28"
+      y="26"
+      width="1144"
+      height="46"
+      rx="12"
+      fill="#111925"
+      stroke="#263244"/>
+
+
+  <!-- Window buttons -->
+
+  <circle
+      cx="52"
+      cy="49"
+      r="6"
+      fill="#F43F5E"/>
+
+  <circle
+      cx="72"
+      cy="49"
+      r="6"
+      fill="#F59E0B"/>
+
+  <circle
+      cx="92"
+      cy="49"
+      r="6"
+      fill="#22C55E"/>
+
+
+  <!-- Terminal title -->
+
+  <text
+      x="118"
+      y="54"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="13">
+
+    VAIBHAO.DEV / ENGINEERING-CONSOLE
+
+  </text>
+
+
+  <!-- Online status -->
+
+  <text
+      x="1146"
+      y="54"
+      text-anchor="end"
+      fill="#22C55E"
+      font-family="monospace"
+      font-size="12">
+
+    SYSTEM ONLINE
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- MAIN TITLE -->
+  <!-- ================================================= -->
+
+  <text
+      x="600"
+      y="118"
+      text-anchor="middle"
+      fill="#F1F5F9"
+      font-family="Arial, sans-serif"
+      font-size="38"
+      font-weight="700">
+
+    VAIBHAO // SYSTEM ONLINE
+
+  </text>
+
+
+  <text
+      x="600"
+      y="148"
+      text-anchor="middle"
+      fill="#22D3EE"
+      font-family="monospace"
+      font-size="15">
+
+    JAVA FULL-STACK DEVELOPER  /  SOFTWARE ENGINEER
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- COMMAND -->
+  <!-- ================================================= -->
+
+  <text
+      x="56"
+      y="190"
+      fill="#22C55E"
+      font-family="monospace"
+      font-size="13">
+
+    $
+
+  </text>
+
+  <text
+      x="76"
+      y="190"
+      fill="#CBD5E1"
+      font-family="monospace"
+      font-size="13">
+
+    ./developer --initialize --production
+
+  </text>
+
+  <text
+      x="390"
+      y="190"
+      fill="#A855F7"
+      font-family="monospace"
+      font-size="13">
+
+    [READY]
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- CORE SYSTEM -->
+  <!-- ================================================= -->
+
+  <rect
+      x="42"
+      y="214"
+      width="335"
+      height="145"
+      rx="16"
+      fill="#0B111B"
+      stroke="#263449"/>
+
+
+  <text
+      x="66"
+      y="242"
+      fill="#38BDF8"
+      font-family="monospace"
+      font-size="11"
+      font-weight="700">
+
+    CORE SYSTEM
+
+  </text>
+
+
+  <!-- Java -->
+
+  <text
+      x="66"
+      y="271"
+      fill="#F1F5F9"
+      font-family="monospace"
+      font-size="13">
+
+    JAVA
+
+  </text>
+
+  <text
+      x="175"
+      y="271"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="11">
+
+    JVM / OOP / APIs
+
+  </text>
+
+  <circle
+      cx="348"
+      cy="267"
+      r="4"
+      fill="#22C55E"/>
+
+
+  <!-- Spring Boot -->
+
+  <text
+      x="66"
+      y="298"
+      fill="#F1F5F9"
+      font-family="monospace"
+      font-size="13">
+
+    SPRING BOOT
+
+  </text>
+
+  <text
+      x="175"
+      y="298"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="11">
+
+    BACKEND / SECURITY
+
+  </text>
+
+  <circle
+      cx="348"
+      cy="294"
+      r="4"
+      fill="#22C55E"/>
+
+
+  <!-- React -->
+
+  <text
+      x="66"
+      y="325"
+      fill="#F1F5F9"
+      font-family="monospace"
+      font-size="13">
+
+    REACT
+
+  </text>
+
+  <text
+      x="175"
+      y="325"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="11">
+
+    UI / STATE / API
+
+  </text>
+
+  <circle
+      cx="348"
+      cy="321"
+      r="4"
+      fill="#22C55E"/>
+
+
+  <!-- ================================================= -->
+  <!-- CURRENT MISSION -->
+  <!-- ================================================= -->
+
+  <rect
+      x="397"
+      y="214"
+      width="761"
+      height="145"
+      rx="16"
+      fill="#0B111B"
+      stroke="#263449"/>
+
+
+  <text
+      x="423"
+      y="242"
+      fill="#A855F7"
+      font-family="monospace"
+      font-size="11"
+      font-weight="700">
+
+    CURRENT MISSION
+
+  </text>
+
+
+  <text
+      x="423"
+      y="270"
+      fill="#E2E8F0"
+      font-family="monospace"
+      font-size="13">
+
+    BUILD SCALABLE SYSTEMS
+
+  </text>
+
+
+  <text
+      x="423"
+      y="295"
+      fill="#94A3B8"
+      font-family="monospace"
+      font-size="11">
+
+    Microservices  /  System Design  /  Cloud
+
+  </text>
+
+
+  <text
+      x="423"
+      y="324"
+      fill="#E2E8F0"
+      font-family="monospace"
+      font-size="13">
+
+    ENGINEERING LOOP
+
+  </text>
+
+
+  <text
+      x="423"
+      y="347"
+      fill="#22D3EE"
+      font-family="monospace"
+      font-size="11">
+
+    THINK &gt; DESIGN &gt; BUILD &gt; TEST &gt; DEPLOY &gt; IMPROVE
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- ANIMATED CIRCUIT -->
+  <!-- ================================================= -->
+
+  <line
+      x1="80"
+      y1="390"
+      x2="1120"
+      y2="390"
+      stroke="#263449"
+      stroke-width="3"/>
+
+
+  <line
+      x1="80"
+      y1="390"
+      x2="1120"
+      y2="390"
+      stroke="url(#accent)"
+      stroke-width="2"
+      stroke-dasharray="10 16"
+      filter="url(#glow)">
+
+    <animate
+        attributeName="stroke-dashoffset"
+        from="0"
+        to="-260"
+        dur="2.2s"
+        repeatCount="indefinite"/>
+
+  </line>
+
+
+  <!-- Circuit nodes -->
+
+  <circle
+      cx="210"
+      cy="390"
+      r="8"
+      fill="#0B111B"
+      stroke="#A855F7"
+      stroke-width="2"/>
+
+  <circle
+      cx="470"
+      cy="390"
+      r="8"
+      fill="#0B111B"
+      stroke="#22D3EE"
+      stroke-width="2"/>
+
+  <circle
+      cx="730"
+      cy="390"
+      r="8"
+      fill="#0B111B"
+      stroke="#38BDF8"
+      stroke-width="2"/>
+
+  <circle
+      cx="990"
+      cy="390"
+      r="8"
+      fill="#0B111B"
+      stroke="#22C55E"
+      stroke-width="2"/>
+
+
+  <!-- Node labels -->
+
+  <text
+      x="210"
+      y="414"
+      text-anchor="middle"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="9">
+
+    BUILD
+
+  </text>
+
+  <text
+      x="470"
+      y="414"
+      text-anchor="middle"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="9">
+
+    SECURE
+
+  </text>
+
+  <text
+      x="730"
+      y="414"
+      text-anchor="middle"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="9">
+
+    TEST
+
+  </text>
+
+  <text
+      x="990"
+      y="414"
+      text-anchor="middle"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="9">
+
+    SHIP
+
+  </text>
+
+</svg>
