@@ -18,9 +18,15 @@
 
 ---
 
-## 👨‍💻 About Me
+<div align="center">
 
-I'm a Java Full-Stack Developer at Koderz Technology focused on building scalable, secure and maintainable web applications.
+<img
+  src="./assets/profile-intro.svg"
+  width="100%"
+  alt="Vaibhao Kamble - Java Full-Stack Developer"
+/>
+
+</div>
 
 ---
 
