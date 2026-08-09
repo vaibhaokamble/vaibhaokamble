@@ -1,172 +1,314 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420">
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1000"
+     height="560"
+     viewBox="0 0 1000 560">
 
-<defs>
+  <!-- ================= BACKGROUND ================= -->
 
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-<stop offset="0%" stop-color="#020617"/>
-<stop offset="100%" stop-color="#0E7490"/>
-</linearGradient>
+  <rect
+    width="1000"
+    height="560"
+    rx="28"
+    fill="#0d1117"
+    stroke="#30363d"
+    stroke-width="2"
+  />
 
-<style>
+  <!-- ================= TITLE ================= -->
 
-.t{
-font-family:'Courier New',monospace;
-fill:#E2E8F0;
-font-weight:600;
-}
+  <text
+    x="500"
+    y="58"
+    text-anchor="middle"
+    fill="#58a6ff"
+    font-family="Arial, sans-serif"
+    font-size="29"
+    font-weight="700">
+    🌱 CURRENTLY EXPLORING
+  </text>
 
-.card{
-fill:#0F172A;
-stroke:#22D3EE;
-stroke-width:2;
-}
+  <text
+    x="500"
+    y="87"
+    text-anchor="middle"
+    fill="#8b949e"
+    font-family="Arial, sans-serif"
+    font-size="14">
+    Curiosity → Practice → Production
+  </text>
 
-.c{
-animation:rise 8s infinite;
-}
 
-.c1{animation-delay:0s;}
-.c2{animation-delay:.7s;}
-.c3{animation-delay:1.4s;}
-.c4{animation-delay:2.1s;}
+  <!-- ================= CONNECTION LINES ================= -->
 
-@keyframes rise{
+  <line
+    x1="500" y1="280"
+    x2="500" y2="150"
+    stroke="#30363d"
+    stroke-width="2"
+  />
 
-0%,8%{
-opacity:0;
-transform:translateY(15px);
-}
+  <line
+    x1="500" y1="280"
+    x2="780" y2="190"
+    stroke="#30363d"
+    stroke-width="2"
+  />
 
-18%,75%{
-opacity:1;
-transform:translateY(0);
-}
+  <line
+    x1="500" y1="280"
+    x2="780" y2="370"
+    stroke="#30363d"
+    stroke-width="2"
+  />
 
-90%,100%{
-opacity:0;
-}
+  <line
+    x1="500" y1="280"
+    x2="220" y2="190"
+    stroke="#30363d"
+    stroke-width="2"
+  />
 
-}
+  <line
+    x1="500" y1="280"
+    x2="220" y2="370"
+    stroke="#30363d"
+    stroke-width="2"
+  />
 
-</style>
 
-</defs>
+  <!-- ================= CENTER ================= -->
 
-<rect
-x="10"
-y="10"
-width="980"
-height="400"
-rx="26"
-fill="url(#bg)"
-stroke="#22D3EE"
-stroke-opacity=".4"
-/>
+  <circle
+    cx="500"
+    cy="280"
+    r="88"
+    fill="#161b22"
+    stroke="#58a6ff"
+    stroke-width="2"
+  />
 
-<text
-x="500"
-y="55"
-text-anchor="middle"
-class="t"
-font-size="29"
->
-🌱 CURRENTLY LEARNING
-</text>
+  <circle
+    cx="500"
+    cy="280"
+    r="68"
+    fill="#0d1117"
+    stroke="#30363d"
+  />
 
-<g class="c c1" transform="translate(45 100)">
-<rect class="card" width="210" height="210" rx="22"/>
+  <text
+    x="500"
+    y="265"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="17"
+    font-weight="700">
+    🧠 GROWTH
+  </text>
 
-<text x="105" y="55" text-anchor="middle" class="t" font-size="32">
-⚛️
-</text>
+  <text
+    x="500"
+    y="291"
+    text-anchor="middle"
+    fill="#58a6ff"
+    font-family="Arial, sans-serif"
+    font-size="15"
+    font-weight="700">
+    MINDSET
+  </text>
 
-<text x="105" y="92" text-anchor="middle" class="t" font-size="20">
-REACT
-</text>
 
-<text x="105" y="130" text-anchor="middle" class="t" font-size="15">
-Hooks
-</text>
+  <!-- ================= REACT ================= -->
 
-<text x="105" y="158" text-anchor="middle" class="t" font-size="15">
-Redux Toolkit
-</text>
+  <rect
+    x="380"
+    y="105"
+    width="240"
+    height="70"
+    rx="16"
+    fill="#161b22"
+    stroke="#30363d"
+  />
 
-<text x="105" y="186" text-anchor="middle" class="t" font-size="15">
-API Integration
-</text>
-</g>
+  <text
+    x="500"
+    y="136"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="20"
+    font-weight="700">
+    ⚛️ React
+  </text>
 
-<g class="c c2" transform="translate(275 100)">
-<rect class="card" width="210" height="210" rx="22"/>
+  <text
+    x="500"
+    y="158"
+    text-anchor="middle"
+    fill="#8b949e"
+    font-family="Arial, sans-serif"
+    font-size="12">
+    Advanced UI • State • Architecture
+  </text>
 
-<text x="105" y="55" text-anchor="middle" class="t" font-size="32">
-🏗️
-</text>
 
-<text x="105" y="92" text-anchor="middle" class="t" font-size="18">
-MICROSERVICES
-</text>
+  <!-- ================= MICROSERVICES ================= -->
 
-<text x="105" y="130" text-anchor="middle" class="t" font-size="15">
-Spring Cloud
-</text>
+  <rect
+    x="80"
+    y="155"
+    width="260"
+    height="70"
+    rx="16"
+    fill="#161b22"
+    stroke="#30363d"
+  />
 
-<text x="105" y="158" text-anchor="middle" class="t" font-size="15">
-API Gateway
-</text>
+  <text
+    x="210"
+    y="186"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="19"
+    font-weight="700">
+    🏗️ Microservices
+  </text>
 
-<text x="105" y="186" text-anchor="middle" class="t" font-size="15">
-Service Discovery
-</text>
-</g>
+  <text
+    x="210"
+    y="208"
+    text-anchor="middle"
+    fill="#8b949e"
+    font-family="Arial, sans-serif"
+    font-size="12">
+    Cloud • Gateway • Discovery
+  </text>
 
-<g class="c c3" transform="translate(505 100)">
-<rect class="card" width="210" height="210" rx="22"/>
 
-<text x="105" y="55" text-anchor="middle" class="t" font-size="32">
-🧠
-</text>
+  <!-- ================= SYSTEM DESIGN ================= -->
 
-<text x="105" y="92" text-anchor="middle" class="t" font-size="18">
-SYSTEM DESIGN
-</text>
+  <rect
+    x="660"
+    y="155"
+    width="260"
+    height="70"
+    rx="16"
+    fill="#161b22"
+    stroke="#30363d"
+  />
 
-<text x="105" y="130" text-anchor="middle" class="t" font-size="15">
-Scalability
-</text>
+  <text
+    x="790"
+    y="186"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="19"
+    font-weight="700">
+    🧠 System Design
+  </text>
 
-<text x="105" y="158" text-anchor="middle" class="t" font-size="15">
-Caching
-</text>
+  <text
+    x="790"
+    y="208"
+    text-anchor="middle"
+    fill="#8b949e"
+    font-family="Arial, sans-serif"
+    font-size="12">
+    Scale • Cache • Distributed Systems
+  </text>
 
-<text x="105" y="186" text-anchor="middle" class="t" font-size="15">
-Distributed Systems
-</text>
-</g>
 
-<g class="c c4" transform="translate(735 100)">
-<rect class="card" width="210" height="210" rx="22"/>
+  <!-- ================= PYTHON ================= -->
 
-<text x="105" y="55" text-anchor="middle" class="t" font-size="32">
-☁️
-</text>
+  <rect
+    x="80"
+    y="335"
+    width="260"
+    height="70"
+    rx="16"
+    fill="#161b22"
+    stroke="#30363d"
+  />
 
-<text x="105" y="92" text-anchor="middle" class="t" font-size="18">
-CLOUD &amp; DEVOPS
-</text>
+  <text
+    x="210"
+    y="366"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="20"
+    font-weight="700">
+    🐍 Python
+  </text>
 
-<text x="105" y="130" text-anchor="middle" class="t" font-size="15">
-Docker
-</text>
+  <text
+    x="210"
+    y="388"
+    text-anchor="middle"
+    fill="#8b949e"
+    font-family="Arial, sans-serif"
+    font-size="12">
+    FastAPI • Automation
+  </text>
 
-<text x="105" y="158" text-anchor="middle" class="t" font-size="15">
-AWS
-</text>
 
-<text x="105" y="186" text-anchor="middle" class="t" font-size="15">
-CI/CD
-</text>
-</g>
+  <!-- ================= AWS ================= -->
+
+  <rect
+    x="660"
+    y="335"
+    width="260"
+    height="70"
+    rx="16"
+    fill="#161b22"
+    stroke="#30363d"
+  />
+
+  <text
+    x="790"
+    y="366"
+    text-anchor="middle"
+    fill="#f0f6fc"
+    font-family="Arial, sans-serif"
+    font-size="20"
+    font-weight="700">
+    ☁️ AWS &amp; DevOps
+  </text>
+
+  <text
+    x="790"
+    y="388"
+    text-anchor="middle"
+    fill="#8b949e"
+    font-family="Arial, sans-serif"
+    font-size="12">
+    Docker • CI/CD • Cloud
+  </text>
+
+
+  <!-- ================= BOTTOM MESSAGE ================= -->
+
+  <text
+    x="500"
+    y="470"
+    text-anchor="middle"
+    fill="#8b949e"
+    font-family="Arial, sans-serif"
+    font-size="14">
+    Always learning. Always building.
+  </text>
+
+  <text
+    x="500"
+    y="500"
+    text-anchor="middle"
+    fill="#58a6ff"
+    font-family="Arial, sans-serif"
+    font-size="18"
+    font-weight="700">
+    BUILD → LEARN → IMPROVE → REPEAT 🚀
+  </text>
 
 </svg>
