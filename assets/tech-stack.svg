@@ -1,1 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500">
 
+<defs>
+
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#020617"/>
+<stop offset="100%" stop-color="#164E63"/>
+</linearGradient>
+
+<style>
+
+.t{
+font-family:'Courier New',monospace;
+fill:#E2E8F0;
+font-weight:600;
+}
+
+.box{
+fill:#0F172A;
+stroke:#22D3EE;
+stroke-width:2;
+}
+
+.item{
+animation:pop 8s infinite;
+}
+
+.i1{animation-delay:0s;}
+.i2{animation-delay:.5s;}
+.i3{animation-delay:1s;}
+.i4{animation-delay:1.5s;}
+.i5{animation-delay:2s;}
+.i6{animation-delay:2.5s;}
+.i7{animation-delay:3s;}
+.i8{animation-delay:3.5s;}
+
+@keyframes pop{
+
+0%,8%{
+opacity:0;
+transform:scale(.85);
+}
+
+18%,75%{
+opacity:1;
+transform:scale(1);
+}
+
+90%,100%{
+opacity:0;
+}
+
+}
+
+</style>
+
+</defs>
+
+<rect
+x="10"
+y="10"
+width="980"
+height="480"
+rx="26"
+fill="url(#bg)"
+stroke="#22D3EE"
+stroke-opacity=".4"
+/>
+
+<text
+x="500"
+y="58"
+text-anchor="middle"
+class="t"
+font-size="30"
+>
+⚡ TECH ARSENAL
+</text>
+
+<g class="item i1" transform="translate(45 90)">
+<rect class="box" width="210" height="100" rx="20"/>
+<text x="105" y="45" text-anchor="middle" class="t" font-size="28">☕ JAVA</text>
+<text x="105" y="75" text-anchor="middle" class="t" font-size="15">OOP • Collections • JVM</text>
+</g>
+
+<g class="item i2" transform="translate(275 90)">
+<rect class="box" width="210" height="100" rx="20"/>
+<text x="105" y="45" text-anchor="middle" class="t" font-size="24">🍃 SPRING BOOT</text>
+<text x="105" y="75" text-anchor="middle" class="t" font-size="15">REST • Security • JPA</text>
+</g>
+
+<g class="item i3" transform="translate(505 90)">
+<rect class="box" width="210" height="100" rx="20"/>
+<text x="105" y="45" text-anchor="middle" class="t" font-size="28">⚛️ REACT</text>
+<text x="105" y="75" text-anchor="middle" class="t" font-size="15">UI • State • APIs</text>
+</g>
+
+<g class="item i4" transform="translate(735 90)">
+<rect class="box" width="210" height="100" rx="20"/>
+<text x="105" y="45" text-anchor="middle" class="t" font-size="25">🌐 HTML + CSS</text>
+<text x="105" y="75" text-anchor="middle" class="t" font-size="15">Structure • Styling</text>
+</g>
+
+<g class="item i5" transform="translate(45 230)">
+<rect class="box" width="210" height="100" rx="20"/>
+<text x="105" y="45" text-anchor="middle" class="t" font-size="27">⚡ JAVASCRIPT</text>
+<text x="105" y="75" text-anchor="middle" class="t" font-size="15">ES6+ • Async • APIs</text>
+</g>
+
+<g class="item i6" transform="translate(275 230)">
+<rect class="box" width="210" height="100" rx="20"/>
+<text x="105" y="45" text-anchor="middle" class="t" font-size="28">🐍 PYTHON</text>
+<text x="105" y="75" text-anchor="middle" class="t" font-size="15">Automation • APIs</text>
+</g>
+
+<g class="item i7" transform="translate(505 230)">
+<rect class="box" width="210" height="100" rx="20"/>
+<text x="105" y="45" text-anchor="middle" class="t" font-size="28">🗄️ SQL</text>
+<text x="105" y="75" text-anchor="middle" class="t" font-size="15">MySQL • PostgreSQL</text>
+</g>
+
+<g class="item i8" transform="translate(735 230)">
+<rect class="box" width="210" height="100" rx="20"/>
+<text x="105" y="45" text-anchor="middle" class="t" font-size="28">🐳 DEVOPS</text>
+<text x="105" y="75" text-anchor="middle" class="t" font-size="15">Docker • AWS • Git</text>
+</g>
+
+<text
+x="500"
+y="410"
+text-anchor="middle"
+class="t"
+font-size="18"
+fill="#22D3EE"
+>
+JAVA → SPRING BOOT → REACT → DATABASE → DOCKER → CLOUD 🚀
+</text>
+
+</svg>
