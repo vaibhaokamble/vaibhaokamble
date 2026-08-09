@@ -108,18 +108,30 @@ Java + Spring Boot + MySQL
 
 ---
 
+<!-- ==================== GITHUB ANALYTICS ==================== -->
+
 ## 📊 GitHub Analytics
 
 <div align="center">
 
 <img
-  src="https://github-readme-stats.vercel.app/api?username=vaibhaokamble&show_icons=true&theme=tokyonight&hide_border=true"
-  width="48%"
+  src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=vaibhaokamble&theme=github_dark"
+  width="100%"
+  alt="GitHub Contribution Overview"
+/>
+
+<br/><br/>
+
+<img
+  src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=vaibhaokamble&theme=github_dark"
+  width="49%"
+  alt="GitHub Statistics"
 />
 
 <img
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=vaibhaokamble&layout=compact&theme=tokyonight&hide_border=true"
-  width="48%"
+  src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=vaibhaokamble&theme=github_dark&utcOffset=5.5"
+  width="49%"
+  alt="Productive Coding Time"
 />
 
 </div>
