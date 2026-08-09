@@ -1,122 +1,711 @@
-from pathlib import Path
-import cairosvg
-from IPython.display import display, Image
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1000"
+     height="560"
+     viewBox="0 0 1000 560">
 
-svg = r'''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650">
-<defs>
-  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#22D3EE"/>
-    <stop offset=".5" stop-color="#58A6FF"/>
-    <stop offset="1" stop-color="#A78BFA"/>
-  </linearGradient>
-  <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-</defs>
+  <defs>
 
-<!-- FRAME -->
-<rect width="1000" height="650" rx="28" fill="#0D1117" stroke="#30363D" stroke-width="2"/>
+    <!-- Main Gradient -->
+    <linearGradient id="accent"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%">
 
-<!-- HEADER -->
-<text x="500" y="55" text-anchor="middle" fill="#F0F6FC" font-family="monospace" font-size="25" font-weight="700">VAIBHAO // DEVELOPER CONSOLE</text>
-<text x="500" y="82" text-anchor="middle" fill="#8B949E" font-family="monospace" font-size="12">JAVA FULL-STACK • SYSTEM BUILDER • CONTINUOUSLY EVOLVING</text>
+      <stop offset="0%" stop-color="#58A6FF"/>
+      <stop offset="50%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
 
-<line x1="70" y1="105" x2="930" y2="105" stroke="#30363D"/>
-<line x1="70" y1="105" x2="230" y2="105" stroke="url(#g)" stroke-width="3" filter="url(#glow)">
-  <animate attributeName="x1" values="70;770;70" dur="4s" repeatCount="indefinite"/>
-  <animate attributeName="x2" values="230;930;230" dur="4s" repeatCount="indefinite"/>
-</line>
+    </linearGradient>
 
-<!-- LEFT IDENTITY CARD -->
-<rect x="55" y="135" width="275" height="390" rx="22" fill="#11161D" stroke="#30363D"/>
+    <!-- Panel Gradient -->
+    <linearGradient id="panel"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%">
 
-<circle cx="192" cy="205" r="55" fill="#0D1117" stroke="url(#g)" stroke-width="3"/>
-<circle cx="192" cy="205" r="43" fill="none" stroke="#30363D">
-  <animate attributeName="r" values="43;50;43" dur="2.5s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values=".9;.2;.9" dur="2.5s" repeatCount="indefinite"/>
-</circle>
-<text x="192" y="215" text-anchor="middle" fill="#58A6FF" font-family="monospace" font-size="28" font-weight="700">VK</text>
+      <stop offset="0%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#0F141A"/>
 
-<text x="192" y="285" text-anchor="middle" fill="#F0F6FC" font-family="monospace" font-size="18" font-weight="700">VAIBHAO KAMBLE</text>
-<text x="192" y="310" text-anchor="middle" fill="#8B949E" font-family="monospace" font-size="12">JAVA FULL-STACK DEVELOPER</text>
+    </linearGradient>
 
-<line x1="85" y1="335" x2="300" y2="335" stroke="#30363D"/>
+  </defs>
 
-<text x="85" y="365" fill="#58A6FF" font-family="monospace" font-size="11">STATUS</text>
-<circle cx="105" cy="388" r="5" fill="#22C55E">
- <animate attributeName="opacity" values="1;.25;1" dur="1s" repeatCount="indefinite"/>
-</circle>
-<text x="120" y="392" fill="#22C55E" font-family="monospace" font-size="12">BUILDING</text>
 
-<text x="85" y="425" fill="#8B949E" font-family="monospace" font-size="11">MISSION</text>
-<text x="85" y="448" fill="#E6EDF3" font-family="monospace" font-size="12">Turn ideas into</text>
-<text x="85" y="469" fill="#E6EDF3" font-family="monospace" font-size="12">clean, scalable software.</text>
+  <!-- ================================================= -->
+  <!-- BACKGROUND                                        -->
+  <!-- ================================================= -->
 
-<text x="85" y="505" fill="#22D3EE" font-family="monospace" font-size="11">● ALWAYS LEARNING</text>
+  <rect
+      x="0"
+      y="0"
+      width="1000"
+      height="560"
+      rx="28"
+      fill="#0D1117"/>
 
-<!-- RIGHT COMMAND CENTER -->
-<rect x="355" y="135" width="590" height="390" rx="22" fill="#11161D" stroke="#30363D"/>
+  <rect
+      x="2"
+      y="2"
+      width="996"
+      height="556"
+      rx="26"
+      fill="none"
+      stroke="#30363D"
+      stroke-width="2"/>
 
-<text x="385" y="170" fill="#58A6FF" font-family="monospace" font-size="13" font-weight="700">COMMAND_CENTER</text>
-<text x="915" y="170" text-anchor="end" fill="#8B949E" font-family="monospace" font-size="11">LIVE</text>
 
-<!-- COMMAND -->
-<rect x="385" y="190" width="530" height="48" rx="12" fill="#0D1117" stroke="#30363D"/>
-<text x="405" y="220" fill="#22C55E" font-family="monospace" font-size="13">$</text>
-<text x="425" y="220" fill="#F0F6FC" font-family="monospace" font-size="13">whoami --engineering-profile</text>
-<rect x="690" y="207" width="8" height="17" fill="#22D3EE">
- <animate attributeName="opacity" values="1;0;1" dur=".8s" repeatCount="indefinite"/>
-</rect>
+  <!-- ================================================= -->
+  <!-- TERMINAL HEADER                                   -->
+  <!-- ================================================= -->
 
-<!-- STACK MATRIX -->
-<text x="385" y="270" fill="#8B949E" font-family="monospace" font-size="11">STACK_MATRIX</text>
+  <rect
+      x="28"
+      y="28"
+      width="944"
+      height="58"
+      rx="16"
+      fill="#161B22"/>
 
-<rect x="385" y="290" width="155" height="62" rx="12" fill="#0D1117" stroke="#30363D"/>
-<text x="405" y="316" fill="#58A6FF" font-family="monospace" font-size="13" font-weight="700">JAVA</text>
-<text x="405" y="337" fill="#8B949E" font-family="monospace" font-size="10">CORE ENGINE</text>
-<circle cx="510" cy="320" r="5" fill="#22C55E"/>
 
-<rect x="555" y="290" width="155" height="62" rx="12" fill="#0D1117" stroke="#30363D"/>
-<text x="575" y="316" fill="#22D3EE" font-family="monospace" font-size="13" font-weight="700">SPRING</text>
-<text x="575" y="337" fill="#8B949E" font-family="monospace" font-size="10">BACKEND</text>
-<circle cx="680" cy="320" r="5" fill="#22C55E"/>
+  <!-- macOS style buttons -->
 
-<rect x="725" y="290" width="190" height="62" rx="12" fill="#0D1117" stroke="#30363D"/>
-<text x="745" y="316" fill="#A78BFA" font-family="monospace" font-size="13" font-weight="700">REACT</text>
-<text x="745" y="337" fill="#8B949E" font-family="monospace" font-size="10">FRONTEND</text>
-<circle cx="885" cy="320" r="5" fill="#22C55E"/>
+  <circle
+      cx="58"
+      cy="57"
+      r="6"
+      fill="#FF5F56"/>
 
-<!-- ARCHITECTURE FLOW -->
-<text x="385" y="385" fill="#8B949E" font-family="monospace" font-size="11">REQUEST → RESPONSE PIPELINE</text>
+  <circle
+      cx="80"
+      cy="57"
+      r="6"
+      fill="#FFBD2E"/>
 
-<line x1="410" y1="430" x2="885" y2="430" stroke="#30363D" stroke-width="4"/>
-<line x1="410" y1="430" x2="885" y2="430" stroke="url(#g)" stroke-width="2" stroke-dasharray="8 14" filter="url(#glow)">
- <animate attributeName="stroke-dashoffset" from="0" to="-220" dur="2s" repeatCount="indefinite"/>
-</line>
+  <circle
+      cx="102"
+      cy="57"
+      r="6"
+      fill="#27C93F"/>
 
-<g font-family="monospace" text-anchor="middle">
- <circle cx="425" cy="430" r="27" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/>
- <text x="425" y="435" fill="#F0F6FC" font-size="10">API</text>
- <circle cx="575" cy="430" r="27" fill="#0D1117" stroke="#22D3EE" stroke-width="2"/>
- <text x="575" y="435" fill="#F0F6FC" font-size="10">SECURITY</text>
- <circle cx="735" cy="430" r="27" fill="#0D1117" stroke="#A78BFA" stroke-width="2"/>
- <text x="735" y="435" fill="#F0F6FC" font-size="10">SERVICE</text>
- <circle cx="875" cy="430" r="27" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/>
- <text x="875" y="435" fill="#F0F6FC" font-size="10">DB</text>
-</g>
 
-<!-- FOOTER -->
-<rect x="385" y="465" width="530" height="38" rx="10" fill="#0D1117"/>
-<text x="405" y="489" fill="#22C55E" font-family="monospace" font-size="11">✓ SYSTEM READY</text>
-<text x="905" y="489" text-anchor="end" fill="#8B949E" font-family="monospace" font-size="10">CLEAN • SECURE • SCALABLE</text>
+  <!-- Terminal title -->
 
-<!-- BOTTOM -->
-<text x="500" y="575" text-anchor="middle" fill="#58A6FF" font-family="monospace" font-size="15" font-weight="700">BUILD. BREAK. LEARN. REFACTOR. SHIP.</text>
-<text x="500" y="600" text-anchor="middle" fill="#64748B" font-family="monospace" font-size="11">Every commit is another step forward.</text>
+  <text
+      x="125"
+      y="62"
+      fill="#94A3B8"
+      font-family="monospace"
+      font-size="14">
 
-</svg>'''
+      vaibhao.dev / developer-console
 
-svg_path = Path("/mnt/data/vaibhao-terminal-command-center.svg")
-png_path = Path("/mnt/data/vaibhao-terminal-command-center-preview.png")
-svg_path.write_text(svg, encoding="utf-8")
-cairosvg.svg2png(bytestring=svg.encode(), write_to=str(png_path), output_width=1200)
-display(Image(filename=str(png_path)))
-print(svg_path)
+  </text>
+
+
+  <!-- Online status -->
+
+  <circle
+      cx="865"
+      cy="57"
+      r="5"
+      fill="#22C55E"/>
+
+  <text
+      x="940"
+      y="62"
+      text-anchor="end"
+      fill="#22C55E"
+      font-family="monospace"
+      font-size="12">
+
+      ONLINE
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- TERMINAL COMMAND                                  -->
+  <!-- ================================================= -->
+
+  <text
+      x="58"
+      y="121"
+      fill="#22C55E"
+      font-family="monospace"
+      font-size="14">
+
+      vaibhao@koderz-tech
+
+  </text>
+
+
+  <text
+      x="250"
+      y="121"
+      fill="#94A3B8"
+      font-family="monospace"
+      font-size="14">
+
+      :~/profile$
+
+  </text>
+
+
+  <text
+      x="365"
+      y="121"
+      fill="#F0F6FC"
+      font-family="monospace"
+      font-size="14"
+      font-weight="bold">
+
+      ./developer --start
+
+  </text>
+
+
+  <!-- Command separator -->
+
+  <line
+      x1="58"
+      y1="142"
+      x2="942"
+      y2="142"
+      stroke="#30363D"/>
+
+
+  <line
+      x1="58"
+      y1="142"
+      x2="240"
+      y2="142"
+      stroke="url(#accent)"
+      stroke-width="3"/>
+
+
+  <!-- ================================================= -->
+  <!-- DEVELOPER IDENTITY                                -->
+  <!-- ================================================= -->
+
+  <rect
+      x="48"
+      y="170"
+      width="292"
+      height="300"
+      rx="20"
+      fill="url(#panel)"
+      stroke="#30363D"/>
+
+
+  <text
+      x="72"
+      y="202"
+      fill="#58A6FF"
+      font-family="monospace"
+      font-size="11"
+      font-weight="bold">
+
+      DEVELOPER_IDENTITY
+
+  </text>
+
+
+  <!-- Avatar -->
+
+  <circle
+      cx="194"
+      cy="264"
+      r="57"
+      fill="#0D1117"
+      stroke="url(#accent)"
+      stroke-width="3"/>
+
+
+  <circle
+      cx="194"
+      cy="264"
+      r="43"
+      fill="none"
+      stroke="#30363D"/>
+
+
+  <text
+      x="194"
+      y="274"
+      text-anchor="middle"
+      fill="#F0F6FC"
+      font-family="monospace"
+      font-size="27"
+      font-weight="bold">
+
+      VK
+
+  </text>
+
+
+  <!-- Name -->
+
+  <text
+      x="194"
+      y="340"
+      text-anchor="middle"
+      fill="#F0F6FC"
+      font-family="monospace"
+      font-size="18"
+      font-weight="bold">
+
+      VAIBHAO KAMBLE
+
+  </text>
+
+
+  <!-- Role -->
+
+  <text
+      x="194"
+      y="363"
+      text-anchor="middle"
+      fill="#8B949E"
+      font-family="monospace"
+      font-size="11">
+
+      JAVA FULL-STACK DEVELOPER
+
+  </text>
+
+
+  <line
+      x1="72"
+      y1="386"
+      x2="316"
+      y2="386"
+      stroke="#30363D"/>
+
+
+  <!-- Mission -->
+
+  <text
+      x="72"
+      y="412"
+      fill="#8B949E"
+      font-family="monospace"
+      font-size="10">
+
+      MISSION
+
+  </text>
+
+
+  <text
+      x="72"
+      y="434"
+      fill="#E6EDF3"
+      font-family="monospace"
+      font-size="11">
+
+      Build simple, secure and
+
+  </text>
+
+
+  <text
+      x="72"
+      y="452"
+      fill="#E6EDF3"
+      font-family="monospace"
+      font-size="11">
+
+      scalable software.
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- ENGINEERING COMMAND CENTER                       -->
+  <!-- ================================================= -->
+
+  <rect
+      x="365"
+      y="170"
+      width="587"
+      height="300"
+      rx="20"
+      fill="url(#panel)"
+      stroke="#30363D"/>
+
+
+  <text
+      x="390"
+      y="202"
+      fill="#58A6FF"
+      font-family="monospace"
+      font-size="11"
+      font-weight="bold">
+
+      ENGINEERING_COMMAND_CENTER
+
+  </text>
+
+
+  <!-- Command box -->
+
+  <rect
+      x="390"
+      y="218"
+      width="537"
+      height="42"
+      rx="10"
+      fill="#0D1117"
+      stroke="#30363D"/>
+
+
+  <text
+      x="407"
+      y="244"
+      fill="#22C55E"
+      font-family="monospace"
+      font-size="12">
+
+      $
+
+  </text>
+
+
+  <text
+      x="427"
+      y="244"
+      fill="#F0F6FC"
+      font-family="monospace"
+      font-size="12">
+
+      whoami --stack
+
+  </text>
+
+
+  <text
+      x="910"
+      y="244"
+      text-anchor="end"
+      fill="#22C55E"
+      font-family="monospace"
+      font-size="10">
+
+      READY
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- TECH STACK                                        -->
+  <!-- ================================================= -->
+
+  <text
+      x="390"
+      y="288"
+      fill="#8B949E"
+      font-family="monospace"
+      font-size="10">
+
+      TECH STACK
+
+  </text>
+
+
+  <!-- JAVA -->
+
+  <rect
+      x="390"
+      y="305"
+      width="160"
+      height="58"
+      rx="10"
+      fill="#0D1117"
+      stroke="#30363D"/>
+
+
+  <text
+      x="408"
+      y="330"
+      fill="#58A6FF"
+      font-family="monospace"
+      font-size="13"
+      font-weight="bold">
+
+      JAVA
+
+  </text>
+
+
+  <text
+      x="408"
+      y="349"
+      fill="#8B949E"
+      font-family="monospace"
+      font-size="9">
+
+      CORE / JVM
+
+  </text>
+
+
+  <circle
+      cx="527"
+      cy="329"
+      r="4"
+      fill="#22C55E"/>
+
+
+  <!-- SPRING BOOT -->
+
+  <rect
+      x="565"
+      y="305"
+      width="170"
+      height="58"
+      rx="10"
+      fill="#0D1117"
+      stroke="#30363D"/>
+
+
+  <text
+      x="583"
+      y="330"
+      fill="#22D3EE"
+      font-family="monospace"
+      font-size="13"
+      font-weight="bold">
+
+      SPRING BOOT
+
+  </text>
+
+
+  <text
+      x="583"
+      y="349"
+      fill="#8B949E"
+      font-family="monospace"
+      font-size="9">
+
+      BACKEND / API
+
+  </text>
+
+
+  <circle
+      cx="712"
+      cy="329"
+      r="4"
+      fill="#22C55E"/>
+
+
+  <!-- REACT -->
+
+  <rect
+      x="750"
+      y="305"
+      width="177"
+      height="58"
+      rx="10"
+      fill="#0D1117"
+      stroke="#30363D"/>
+
+
+  <text
+      x="768"
+      y="330"
+      fill="#A78BFA"
+      font-family="monospace"
+      font-size="13"
+      font-weight="bold">
+
+      REACT
+
+  </text>
+
+
+  <text
+      x="768"
+      y="349"
+      fill="#8B949E"
+      font-family="monospace"
+      font-size="9">
+
+      FRONTEND / UI
+
+  </text>
+
+
+  <circle
+      cx="904"
+      cy="329"
+      r="4"
+      fill="#22C55E"/>
+
+
+  <!-- ================================================= -->
+  <!-- PRODUCTION FLOW                                   -->
+  <!-- ================================================= -->
+
+  <text
+      x="390"
+      y="394"
+      fill="#8B949E"
+      font-family="monospace"
+      font-size="10">
+
+      PRODUCTION_FLOW
+
+  </text>
+
+
+  <line
+      x1="420"
+      y1="430"
+      x2="895"
+      y2="430"
+      stroke="#30363D"
+      stroke-width="4"/>
+
+
+  <line
+      x1="420"
+      y1="430"
+      x2="895"
+      y2="430"
+      stroke="url(#accent)"
+      stroke-width="2"
+      stroke-dasharray="8 14"/>
+
+
+  <!-- API -->
+
+  <circle
+      cx="430"
+      cy="430"
+      r="24"
+      fill="#0D1117"
+      stroke="#58A6FF"
+      stroke-width="2"/>
+
+
+  <text
+      x="430"
+      y="434"
+      text-anchor="middle"
+      fill="#F0F6FC"
+      font-family="monospace"
+      font-size="9">
+
+      API
+
+  </text>
+
+
+  <!-- SECURE -->
+
+  <circle
+      cx="585"
+      cy="430"
+      r="24"
+      fill="#0D1117"
+      stroke="#22D3EE"
+      stroke-width="2"/>
+
+
+  <text
+      x="585"
+      y="434"
+      text-anchor="middle"
+      fill="#F0F6FC"
+      font-family="monospace"
+      font-size="9">
+
+      SECURE
+
+  </text>
+
+
+  <!-- TEST -->
+
+  <circle
+      cx="740"
+      cy="430"
+      r="24"
+      fill="#0D1117"
+      stroke="#A78BFA"
+      stroke-width="2"/>
+
+
+  <text
+      x="740"
+      y="434"
+      text-anchor="middle"
+      fill="#F0F6FC"
+      font-family="monospace"
+      font-size="9">
+
+      TEST
+
+  </text>
+
+
+  <!-- SHIP -->
+
+  <circle
+      cx="890"
+      cy="430"
+      r="24"
+      fill="#0D1117"
+      stroke="#58A6FF"
+      stroke-width="2"/>
+
+
+  <text
+      x="890"
+      y="434"
+      text-anchor="middle"
+      fill="#F0F6FC"
+      font-family="monospace"
+      font-size="9">
+
+      SHIP
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- FOOTER                                            -->
+  <!-- ================================================= -->
+
+  <text
+      x="500"
+      y="510"
+      text-anchor="middle"
+      fill="#58A6FF"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold">
+
+      BUILD • LEARN • REFACTOR • SHIP
+
+  </text>
+
+
+  <text
+      x="500"
+      y="535"
+      text-anchor="middle"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="10">
+
+      clean code • secure APIs • scalable systems
+
+  </text>
+
+</svg>
