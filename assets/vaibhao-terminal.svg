@@ -1,1 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#020617"/>
+<stop offset="55%" stop-color="#0F172A"/>
+<stop offset="100%" stop-color="#0E7490"/>
+</linearGradient>
 
+<filter id="glow">
+<feGaussianBlur stdDeviation="3" result="blur"/>
+<feMerge>
+<feMergeNode in="blur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+
+<style>
+.mono{
+font-family:'Courier New',monospace;
+}
+
+.text{
+font-size:19px;
+fill:#E2E8F0;
+}
+
+.cyan{
+fill:#22D3EE;
+}
+
+.green{
+fill:#4ADE80;
+}
+
+.blue{
+fill:#60A5FA;
+}
+
+.dim{
+fill:#64748B;
+}
+
+.line{
+opacity:0;
+transform:translateX(-15px);
+}
+
+.l1{animation:show 10s infinite 0s;}
+.l2{animation:show 10s infinite .8s;}
+.l3{animation:show 10s infinite 1.6s;}
+.l4{animation:show 10s infinite 2.4s;}
+.l5{animation:show 10s infinite 3.2s;}
+.l6{animation:show 10s infinite 4s;}
+.l7{animation:show 10s infinite 4.8s;}
+.l8{animation:show 10s infinite 5.6s;}
+
+.cursor{
+animation:blink 1s steps(2,start) infinite;
+}
+
+@keyframes show{
+0%,7%{
+opacity:0;
+transform:translateX(-15px);
+}
+14%,78%{
+opacity:1;
+transform:translateX(0);
+}
+88%,100%{
+opacity:0;
+}
+}
+
+@keyframes blink{
+50%{
+opacity:0;
+}
+}
+</style>
+</defs>
+
+<rect
+x="10"
+y="10"
+width="980"
+height="500"
+rx="24"
+fill="url(#bg)"
+stroke="#22D3EE"
+stroke-opacity=".5"
+/>
+
+<circle cx="42" cy="44" r="8" fill="#FF5F56"/>
+<circle cx="68" cy="44" r="8" fill="#FFBD2E"/>
+<circle cx="94" cy="44" r="8" fill="#27C93F"/>
+
+<text
+x="125"
+y="50"
+class="mono"
+font-size="18"
+fill="#94A3B8"
+>
+vaibhao@koderz-tech: ~/profile
+</text>
+
+<text
+x="42"
+y="100"
+class="mono text"
+>
+<tspan class="cyan">$</tspan> neofetch
+</text>
+
+<text x="42" y="140" class="mono text line l1">
+<tspan class="blue">OS:</tspan>
+Windows 11 / Cross-Platform
+</text>
+
+<text x="42" y="174" class="mono text line l2">
+<tspan class="blue">Role:</tspan>
+Java Full-Stack Developer @ Koderz Technology
+</text>
+
+<text x="42" y="208" class="mono text line l3">
+<tspan class="blue">Runtime:</tspan>
+Java 21
+</text>
+
+<text x="42" y="242" class="mono text line l4">
+<tspan class="blue">Stack:</tspan>
+Spring Boot • React • SQL
+</text>
+
+<text x="42" y="276" class="mono text line l5">
+<tspan class="blue">Focus:</tspan>
+Microservices • REST APIs • Clean Architecture
+</text>
+
+<text x="42" y="324" class="mono text line l6">
+<tspan class="green">✓</tspan>
+Authentication initialized
+</text>
+
+<text x="42" y="358" class="mono text line l7">
+<tspan class="green">✓</tspan>
+Database connection ready
+</text>
+
+<text x="42" y="392" class="mono text line l8">
+<tspan class="cyan">STATUS:</tspan>
+<tspan class="green">
+BUILDING • LEARNING • SHIPPING 🚀
+</tspan>
+</text>
+
+<text x="42" y="442" class="mono text">
+<tspan class="cyan">$</tspan>
+<tspan class="dim"> mission</tspan>
+=
+<tspan class="green">
+"Build simple, scalable &amp; maintainable software."
+</tspan>
+</text>
+
+<text x="42" y="478" class="mono text">
+<tspan class="cyan">$</tspan>
+<tspan class="cursor">█</tspan>
+</text>
+
+</svg>
